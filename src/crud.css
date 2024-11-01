@@ -1,0 +1,260 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
+    background: url('https://wallup.net/wp-content/uploads/2019/05/10/239517-nature-lake-landscape-reflection-fog-ultrahd-4k-wallpaper.jpg') no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.button-group {
+    margin-top: 15px; /* Added margin for better spacing */
+}
+
+button {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.file-management label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.file-management input,
+.file-management textarea,
+select {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.file-management input:focus,
+.file-management textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.file-content,
+.update-form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+
+pre {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+ul#activities {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 15px;
+}
+
+ul#activities li {
+    padding: 12px;
+    background-color: #f4f4f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0;
+}
+
+select {
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2, h3 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+/* Existing styles... */
+
+.button-group {
+    margin-top: 15px; /* Added margin for better spacing */
+}
+
+button {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff; /* Default button color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Default hover color */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Add styles for the delete button */
+.delete-button {
+    background-color: #dc3545; /* Red color */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Button group styles */
+.button-group {
+    margin-top: 15px; /* Added margin for better spacing */
+}
+
+/* General button styles */
+button {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Specific styles for different buttons */
+.read-button {
+    background-color: #ffc107; /* Yellow color */
+}
+
+.read-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.update-button {
+    background-color: #28a745; /* Green color */
+}
+
+.update-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red color */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+.back-button {
+    position: absolute; /* Position it relative to the container */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.container {
+    position: relative; /* Ensure the container is positioned relative for absolute children */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+
+

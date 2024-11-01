@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise App</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <!-- Location input section -->
+        <div id="location-input">
+            <input type="text" id="countryInput" placeholder="Enter country or city name" required>
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <!-- Section for displaying weather information -->
+        <div id="weather-card">
+            <div id="weather-info">
+                <h2 id="location"></h2>
+                <p id="local-time"></p>
+                <p id="current-temperature"></p>
+                <p id="forecast-temperature"></p>
+                <img id="weather-icon" class="icon"/>
+                <p id="wind-speed"></p>
+                <p id="humidity"></p>
+                <p id="weather-condition"></p>
+                <p id="chance-of-snow"></p>
+                <p id="chance-of-rain"></p>
+                <div id="recommendations"></div>
+            </div>
+        </div>
+
+        <!-- Section for navigation buttons -->
+        <div id="navigation-section">
+            <h2>Manage Activities</h2>
+            <a href="crud.html" class="nav-link">Open CRUD</a>
+
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

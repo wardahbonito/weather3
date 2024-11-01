@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD for Weather</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-button">
+            <a href="index.html">
+                <button>Back</button>
+            </a>
+        </div>
+
+        <h1>CRUD for Weather</h1>
+
+        <!-- Section for File Operations -->
+        <section class="file-management">
+            <h2>File Operations</h2>
+
+            <!-- Button Group for CRUD Operations -->
+            <div class="button-group">
+                <button class="read-button" onclick="readFile()">Read File</button>
+                <button class="update-button" onclick="showUpdateForm()">Update File</button>
+                <button class="delete-button" onclick="deleteFile()">Delete File</button>
+            </div>
+
+            <!-- File Selection Dropdown -->
+            <div class="input-group">
+                <label for="fileList">Select File:</label>
+                <select id="fileList" onchange="readFile()">
+                    <!-- Dynamically populated options will go here -->
+                </select>
+            </div>
+
+            <!-- Section to Display File Content After Reading -->
+            <div id="fileContentSection" class="file-content">
+                <h3>File Content</h3>
+                <pre id="fileContent"></pre>
+            </div>
+
+            <!-- Update Form for File Content -->
+            <div id="updateForm" class="update-form" style="display: none;">
+                <h3>Update File</h3>
+                <div class="input-group">
+                    <label for="updateFileName">New File Name:</label>
+                    <input type="text" id="updateFileName" placeholder="New file name">
+                </div>
+                <div class="input-group">
+                    <label for="updateContent">New File Content:</label>
+                    <textarea id="updateContent" placeholder="Enter new content here"></textarea>
+                </div>
+                <div class="button-group">
+                    <button onclick="submitUpdate()">Submit Update</button>
+                    <button onclick="hideUpdateForm()">Cancel</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

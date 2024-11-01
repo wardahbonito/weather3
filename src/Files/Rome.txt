@@ -1,0 +1,8 @@
+Weather Details for Rome:
+Local Time: 2024-10-31 17:34
+Current Temperature: 19.3 °C
+Wind Speed: 5.8 kph
+Humidity: 83%
+Weather Condition: Clear
+Chance of Snow: 0 cm
+Chance of Rain: 0 mm
